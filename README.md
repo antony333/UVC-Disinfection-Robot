@@ -22,4 +22,4 @@ Movement of the robot in Hospital World is controlled using the ROS package **te
 ## SLAM using Gmapping
 A 2D map of hospital world is build with the help of **lidar sensor** mounted on the Robot. The map is build using the ROS package **gmapping** which provides a laser based SLAM.
 
-![Hospital World Map](https://user-images.githubusercontent.com/72541715/127989474-7784b17f-5f2e-40e1-9c14-7a39d2edd2d6.png | width=100)
+![Hospital World Map](https://user-images.githubusercontent.com/72541715/127989474-7784b17f-5f2e-40e1-9c14-7a39d2edd2d6.png=100x100)
