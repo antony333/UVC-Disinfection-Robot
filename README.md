@@ -11,3 +11,6 @@ The Robot Operating System (ROS) is a flexible framework for writing robot softw
 ![Fusion Model](https://user-images.githubusercontent.com/72541715/127964696-bbcaf687-6e80-4ecf-94de-86eb9522bd19.png)
 
 ## World for Robot Simulation
+The world for robot simulation is designed including various real-world obstacles so that robot won't encounter any real time working errors.The world is designed using Gazebo Building Editor.
+
+![Hospital World](https://user-images.githubusercontent.com/72541715/127981025-58960507-bddc-4351-a5f5-c162f94fa0e7.png)
