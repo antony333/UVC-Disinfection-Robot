@@ -1,5 +1,10 @@
 # UVC-Disinfection-Robot
 Design and Simulation of UVC Disinfection Robot using ROS
+Softwares Used
+**Robot OPerating System(ROS)**
+**Fusion 360**
+**Gazebo**
+**Rviz**
 
 https://user-images.githubusercontent.com/72541715/127963867-d864738a-9dbb-4577-a7b6-3873478fa4e3.mp4
 
@@ -22,4 +27,11 @@ Movement of the robot in Hospital World is controlled using the ROS package **te
 ## SLAM using Gmapping
 A 2D map of hospital world is build with the help of **lidar sensor** mounted on the Robot. The map is build using the ROS package **gmapping** which provides a laser based SLAM.
 
-![Hospital World Map](https://user-images.githubusercontent.com/72541715/127989474-7784b17f-5f2e-40e1-9c14-7a39d2edd2d6.png=100x100)
+![Hospital World Map](https://user-images.githubusercontent.com/72541715/127989474-7784b17f-5f2e-40e1-9c14-7a39d2edd2d6.png)
+
+## Autonomous Navigation
+Autonomous NAvigation of the Robot is achieved using the ROS **navigation-stack** package.This package helps to move the robot from initial position to the goal position, without making any collision with the environment.
+
+It involves the robot localising itself on the static map using the AMCL package which uses the Adaptive Monte Carlo localization algorithm. After we obtain the robot’s current position, the goal position is sent to the move_base node which will then send it to the global planner to plan the entire path whose each segment is then executed by the local planner, which is associated with the local costmap. This is followed by it generating command velocity in the form of a twist message to the robot base controller which then converts it to the equivalent motor speed.
+
+![image](https://user-images.githubusercontent.com/72541715/127992054-66f77875-8dbf-40de-90e1-812f18b03f6c.png)
