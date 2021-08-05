@@ -1,5 +1,5 @@
 # UVC-Disinfection-Robot
-Design and Simulation of UVC Disinfection Autonomous Robot using ROS
+Design and Simulation of an Autonomous UVC Disinfection Robot using ROS
 
 ## Softwares Used
 **Robot Operating System(ROS)**  
